@@ -9,7 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        SwiftUIWebView(url: URL ( string: "http://linhkiem.fun/" ) )
+        VStack {
+            SwiftUIWebView(url: URL ( string: "http://linhkiem.fun/" ) )
+        }
     }
 }
 
