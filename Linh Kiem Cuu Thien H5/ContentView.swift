@@ -54,7 +54,12 @@ struct ContentView: View {
         self.spinner = UIActivityIndicatorView(style: .medium)
         self.spinner.startAnimating()
         
-        self.webView = WKWebView()
+        let prefs = WKWebpagePreferences()
+        prefs.allowsContentJavaScript = true
+        let config = WKWebViewConfiguration()
+        config.defaultWebpagePreferences = prefs
+        
+        self.webView = WKWebView(frame: .zero, configuration: config)
         self.webView.addObserver(toolbar, forKeyPath: #keyPath(WKWebView.isLoading), options: .new, context: nil)
         
         let request = URLRequest(url: homeUrl)

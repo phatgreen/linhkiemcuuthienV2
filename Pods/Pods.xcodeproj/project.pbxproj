@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		381DC167171A366F272034109777538F /* Pods-Linh Kiem Cuu Thien H5-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6589CB3D8CAA6D5F72E5E45E5ED17099 /* Pods-Linh Kiem Cuu Thien H5-dummy.m */; };
-		A4AF5AA3034A3EF15517AF2CDA95AD94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		E496CFC6CD6C963E4208C69C89792902 /* Pods-Linh Kiem Cuu Thien H5-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1FE72B99E35414374FCBC6B87A8F032 /* Pods-Linh Kiem Cuu Thien H5-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -17,9 +16,8 @@
 		25D199C6543C82F5CD41434DFF610C7F /* Pods-Linh Kiem Cuu Thien H5-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Linh Kiem Cuu Thien H5-acknowledgements.markdown"; sourceTree = "<group>"; };
 		346FE297E24855CA875BB2C8120D246A /* Pods-Linh Kiem Cuu Thien H5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Linh Kiem Cuu Thien H5.release.xcconfig"; sourceTree = "<group>"; };
 		6589CB3D8CAA6D5F72E5E45E5ED17099 /* Pods-Linh Kiem Cuu Thien H5-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Linh Kiem Cuu Thien H5-dummy.m"; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		8400E3168458CF67E260DC88301D5450 /* Pods-Linh Kiem Cuu Thien H5.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Linh Kiem Cuu Thien H5.debug.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B3276C36D9EC88DA604488C0D64E13A6 /* Pods-Linh Kiem Cuu Thien H5 */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Linh Kiem Cuu Thien H5"; path = Pods_Linh_Kiem_Cuu_Thien_H5.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1FE72B99E35414374FCBC6B87A8F032 /* Pods-Linh Kiem Cuu Thien H5-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Linh Kiem Cuu Thien H5-umbrella.h"; sourceTree = "<group>"; };
 		D7A8DADC6F746E2BB06A4A217EB05056 /* Pods-Linh Kiem Cuu Thien H5.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Linh Kiem Cuu Thien H5.modulemap"; sourceTree = "<group>"; };
@@ -31,7 +29,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4AF5AA3034A3EF15517AF2CDA95AD94 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,7 +54,6 @@
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";

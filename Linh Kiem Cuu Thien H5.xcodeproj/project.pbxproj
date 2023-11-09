@@ -15,7 +15,6 @@
 		08AA93FE2AFD2081004AA0A2 /* WebArchiver in Frameworks */ = {isa = PBXBuildFile; productRef = 08AA93FD2AFD2081004AA0A2 /* WebArchiver */; };
 		08AA94022AFD210A004AA0A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AA94012AFD210A004AA0A2 /* SceneDelegate.swift */; };
 		08AA94042AFD2130004AA0A2 /* UIViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AA94032AFD2130004AA0A2 /* UIViewWrapper.swift */; };
-		08E684122AF4134200F07A06 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E684112AF4134200F07A06 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		08AA94012AFD210A004AA0A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		08AA94032AFD2130004AA0A2 /* UIViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewWrapper.swift; sourceTree = "<group>"; };
 		08E684102AF411AA00F07A06 /* Linh-Kiem-Cuu-Thien-H5-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Linh-Kiem-Cuu-Thien-H5-Info.plist"; sourceTree = SOURCE_ROOT; };
-		08E684112AF4134200F07A06 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		87C6ED5A16E7430F9C955273 /* Pods-Linh Kiem Cuu Thien H5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Linh Kiem Cuu Thien H5.release.xcconfig"; path = "Target Support Files/Pods-Linh Kiem Cuu Thien H5/Pods-Linh Kiem Cuu Thien H5.release.xcconfig"; sourceTree = "<group>"; };
 		E9D3C54EC7CF4A9C3702CA75 /* Pods-Linh Kiem Cuu Thien H5.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Linh Kiem Cuu Thien H5.debug.xcconfig"; path = "Target Support Files/Pods-Linh Kiem Cuu Thien H5/Pods-Linh Kiem Cuu Thien H5.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,7 +69,6 @@
 				08A8ECA82AF392E600F8C932 /* ContentView.swift */,
 				08AA94012AFD210A004AA0A2 /* SceneDelegate.swift */,
 				08AA94032AFD2130004AA0A2 /* UIViewWrapper.swift */,
-				08E684112AF4134200F07A06 /* WebView.swift */,
 				08A8ECAA2AF392E800F8C932 /* Assets.xcassets */,
 				08A8ECAC2AF392E800F8C932 /* Preview Content */,
 			);
@@ -208,7 +205,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				08AA94022AFD210A004AA0A2 /* SceneDelegate.swift in Sources */,
-				08E684122AF4134200F07A06 /* WebView.swift in Sources */,
 				08A8ECA92AF392E600F8C932 /* ContentView.swift in Sources */,
 				08AA94042AFD2130004AA0A2 /* UIViewWrapper.swift in Sources */,
 				08A8ECA72AF392E600F8C932 /* Linh_Kiem_Cuu_Thien_H5App.swift in Sources */,
@@ -350,9 +346,9 @@
 				INFOPLIST_FILE = "Linh-Kiem-Cuu-Thien-H5-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Linh Kiếm H5";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
@@ -388,9 +384,9 @@
 				INFOPLIST_FILE = "Linh-Kiem-Cuu-Thien-H5-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Linh Kiếm H5";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
