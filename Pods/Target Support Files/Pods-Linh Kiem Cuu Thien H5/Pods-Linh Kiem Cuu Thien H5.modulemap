@@ -1,0 +1,6 @@
+framework module Pods_Linh_Kiem_Cuu_Thien_H5 {
+  umbrella header "Pods-Linh Kiem Cuu Thien H5-umbrella.h"
+
+  export *
+  module * { export * }
+}
