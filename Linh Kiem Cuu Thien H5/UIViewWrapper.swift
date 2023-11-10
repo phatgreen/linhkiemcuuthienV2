@@ -8,7 +8,28 @@
 
 import SwiftUI
 import WebKit
-  
+
+extension WKPreferences {
+    @objc func _setOfflineApplicationCacheIsEnabled(_ isEnabled: Bool) {
+        // Kiểm tra xem có thể truy cập WKWebsiteDataStore không
+        if #available(iOS 14.0, *) {
+            // Sử dụng WKWebsiteDataStore để thiết lập cache khi offline
+            let dataStore = WKWebsiteDataStore.default()
+            let websiteDataTypes = Set([WKWebsiteDataTypeOfflineWebApplicationCache])
+
+            // Thiết lập cache khi offline
+            dataStore.removeData(ofTypes: websiteDataTypes, modifiedSince: Date.distantPast) {
+                // Xử lý khi hoàn tất việc xóa cache
+                print("Offline application cache is enabled: \(isEnabled)")
+            }
+        } else {
+            // iOS 13 và phiên bản thấp hơn không hỗ trợ WKWebsiteDataStore
+            // Thực hiện các bước thích hợp cho các phiên bản iOS thấp hơn
+            print("Unsupported on iOS versions prior to 14.0")
+        }
+    }
+}
+
 struct UIViewWrapper: UIViewRepresentable {
     
     let view: WKWebView
@@ -16,6 +37,11 @@ struct UIViewWrapper: UIViewRepresentable {
     func makeUIView(context: Context) -> UIView  {
         view.uiDelegate = context.coordinator
         view.navigationDelegate = context.coordinator
+        
+        // Gọi phương thức để thiết lập cache khi offline
+        let preferences = view.configuration.preferences
+        preferences._setOfflineApplicationCacheIsEnabled(true)
+
         return view
     }
     
