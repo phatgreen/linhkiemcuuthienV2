@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
-        let url = URL(string: "https://lkh5.fun")!
+        let url = URL(string: "http://lkh5.fun")!
         let contentView = ContentView(homeUrl: url)
 
         // Use a UIHostingController as window root view controller.
